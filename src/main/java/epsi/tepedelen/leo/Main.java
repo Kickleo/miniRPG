@@ -1,11 +1,11 @@
 package epsi.tepedelen.leo;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        Character gandalf = new Character("Gandalf", "Mage");
-        Character legolas = new Character("Legolas", "Archer");
-
-        System.out.printf("%s%n%s", gandalf, legolas);
-
+        SpringApplication.run(Main.class, args);
     }
 }

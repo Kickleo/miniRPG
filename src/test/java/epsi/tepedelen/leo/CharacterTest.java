@@ -1,5 +1,6 @@
 package epsi.tepedelen.leo;
 
+import epsi.tepedelen.leo.rpg.model.Character;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,6 +23,9 @@ class CharacterTest {
     void characterTest_creation() {
         assertEquals(1, c.getLevel());
     }
+
+    @Test
+    void givenNoQuest_whenCompletingQuest_thenThrowNoQuestException() {}
 
     @Test
     void test_LevelUp() {
